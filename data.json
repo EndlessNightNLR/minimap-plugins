@@ -1,10 +1,10 @@
 {
 	"pixelplanet.fun":{
-		"Buff notifications": {
-			{
+		"plugins": {
+			"Buff notifications": {
 				"desc": "some test description",
 				"src": "url"
-			}
+			}	
 		}
 	}
 }
