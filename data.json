@@ -1,0 +1,11 @@
+{
+	"pixelplanet.fun":{
+		"plugins": [
+			{
+				"name": "test",
+				"desc": "some test description",
+				"src": "url"
+			}
+		]
+	}
+}
