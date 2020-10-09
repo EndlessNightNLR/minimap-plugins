@@ -1,14 +1,6 @@
 {
-	"pixelplanet.fun":{
-		"plugins": {
-			"Buff Notifications": {
-				"desc": "some test description",
-				"src": "url"
-			},
-			"Remote Message": {
-				"desc": "none",
-				"src": "https://raw.githubusercontent.com/EndlessNightNLR/minimap-plugins/master/plugins/Remote%20Message.js"
-			}
-		}
+	"Remote Message": {
+		"desc": "none",
+		"src": "https://raw.githubusercontent.com/EndlessNightNLR/minimap-plugins/master/plugins/Remote%20Message.js"
 	}
 }
