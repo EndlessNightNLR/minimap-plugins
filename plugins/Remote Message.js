@@ -63,7 +63,7 @@ function initCode(){
         minimap.panel.add(msgBtn);
 
         let remoteMessage = new RemoteMessage({
-        	src: 'https://raw.githubusercontent.com/EndlessNightNLR/endlessnightnlr.github.io/master/MLPP/PixelPlanet/msg.html',
+        	src: 'https://raw.githubusercontent.com/EndlessNightNLR/endlessnightnlr.github.io/master/MLPP/rplace/msg.html',
         	interval: 60e3,
         	startMsg: uo.get('lastRemoteMessage')
         });
