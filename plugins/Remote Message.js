@@ -46,7 +46,7 @@ function initCode(){
                 }
                 
                 this.current = text;
-                if(msg !== uo.get('lastRemoteMessage'))
+                if(text !== uo.get('lastRemoteMessage'))
                     this.onNewMessage(this.current);
         	}
 
