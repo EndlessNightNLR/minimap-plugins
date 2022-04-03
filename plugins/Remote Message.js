@@ -37,16 +37,17 @@ function initCode(){
         		this.update();
         	}
 
-        	update(){
-        		fetch(this.src)
-        		.then(res => res.text())
-        		.then(msg => {
-        			//console.warn(msg,this);
-        			this.current = msg;
-        			if(msg !== uo.get('lastRemoteMessage'))
-        				this.onNewMessage(this.current);
-        		})
-        		.catch(console.error);
+        	async update(){
+                let text = null;
+                if ('loadText' in functions) {
+                    text = await loadText(this.src);
+                } else {
+                    text = await fetch(this.src).then(res => res.text());
+                }
+                
+                this.current = text;
+                if(msg !== uo.get('lastRemoteMessage'))
+                    this.onNewMessage(this.current);
         	}
 
         	onNewMessage(){}
