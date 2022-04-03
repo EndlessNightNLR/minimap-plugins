@@ -40,7 +40,7 @@ function initCode(){
         	async update(){
                 let text = null;
                 if ('loadText' in functions) {
-                    text = await loadText(this.src);
+                    text = await functions.loadText(this.src);
                 } else {
                     text = await fetch(this.src).then(res => res.text());
                 }
